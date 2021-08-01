@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,500&display=swap">
+
+
+
+    <title> FAR CONVERSOR DE MOEDAS </title>
+</head>
+
+<body>
+
+    <div id="cabecalho">
+        <h1> FAR CONVERSOR DE MOEDAS </h1>
+    </div>
+
+    <div id="caixa-princial">
+
+        <p class="paragrafo"> Converter <b>de</b> </p>
+        <select class="select">
+            <option> R$ Real Brasileito </option>
+
+        </select>
+
+        <p class="paragrafo"> Converter <b>para</b> </p>
+        <select class="select" id="select-moedas">
+            <option>U$ Dolar Americano</option>
+            <option>€ Euro</option>
+
+        </select>
+
+        <p class="paragrafo"> <b>valor</b></p>
+        <input id="input" placeholder="R$ 10.000,00" type="number">
+
+        <button id="botao"> CONVERTER </button>
+        <div id="caixa-interna">
+            <div class="caixa-menor">
+                <img src="./img/brasil 2.png ">
+                <p class="paragrafo"> Real</p>
+                <p class="paragrafo1" id="inputreal"> R$ 10.000,00 </p>
+            </div>
+
+            <img id="seta" src="./img/seta.png">
+
+
+            <div class="caixa-menor">
+                <img id="bandeiramoedas" src="./img/estados-unidos (1) 1.png ">
+                <p class="paragrafo" id="textomoeda"> Dolar Americano</p>
+                <p class="paragrafo1" id="inputmoedas"> U$ 2.000,00 </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: #000000;
+    }
+
+    #cabecalho {
+        background: #9657A5;
+        width: 375px;
+        height: 66px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    h1 {
+        color: #F4F4F4;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #caixa-princial {
+        background: #E5E5E5;
+        width: 375px;
+        padding: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .paragrafo {
+        margin-bottom: 6px;
+        color: #777777;
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+
+    .select {
+        background: #FFFFFF;
+        border: 1px solid #BBBBBB;
+        border-radius: 4px;
+        height: 48px;
+        width: 327px;
+        margin-bottom: 23px;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+
+    #input {
+        height: 48px;
+        width: 327px;
+        background: #FFFFFF;
+        border: 1px solid #BBBBBB;
+        border-radius: 4px;
+        margin-bottom: 23px;
+        outline: none;
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+
+    #botao {
+        background: #CDD728;
+        border-radius: 25px;
+        display: block;
+        height: 48px;
+        width: 327px;
+        cursor: pointer;
+        border: none;
+        margin-bottom: 23px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        color: #FFFFFF;
+        outline: none;
+
+    }
+
+        #botao:active{
+            opacity: 0.6;
+        }
+            
+    #caixa-interna {
+        border: 1px solid #9657A5;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .caixa-menor{
+        text-align: center ;
+    }
+
+    #seta{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .paragrafo1{
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+</style>
+
+    <script src="./scripts.js">
+        
+
+
+    </script>
+
+</html>
